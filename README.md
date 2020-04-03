@@ -4,7 +4,7 @@
 
 Inspired by Mercuryseries Flashy  .
 
-###Installation
+### Installation
 First, pull in the package through Composer.
 
 Run ```  composer require hugueso/uflash  ```
