@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Hugueso\\Uflash": "src/"
+            "Hugueso\\Uflash\\": "src/"
         },
         "files": [
             "src/functions.php"
