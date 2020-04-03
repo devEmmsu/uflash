@@ -1,0 +1,35 @@
+{
+    "name": "hugueso/uflash",
+    "description": "simple  message flash ",
+    "keywords": ["hugueso", "flash message","simple notification"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "olinga emmanuel",
+            "email": "dev.olinga@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "~5.0|~6.0|~7.0|~8.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Hugueso\\Uflash": "src/"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "minimum-stability": "stable",
+    "extra" : {
+        "laravel" : {
+            "providers" : [
+                "Hugueso\\Uflash\\UflashServiceProvider"
+            ],
+            "aliases": {
+                "Uflash": "Hugueso\\Uflash\\Uflash"
+            }
+        }
+    }
+}
