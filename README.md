@@ -23,6 +23,12 @@ And, for convenience, add a facade alias to this same file at the bottom:
 ];
 
 ```
+> Publish now the public  vendor 
+
+```
+php artisan vendor:publish  --tag=public --provider="Hugueso\Uflash\UflashServiceProvider"
+```
+
 ### Usage
 Within your controllers
 ```
@@ -37,8 +43,9 @@ public function index()
 
 ```
 You may also do:
+- ``` Uflash::success('your Message', 'http://your-link.com') ```
 - ``` Uflash::info('your Message', 'http://your-link.com') ```
-- ``` Uflash::dark('your Message', 'http://your-link.com') ```
+-  ``` Uflash::warning('your Message', 'http://your-link.com') ```
 -  ``` Uflash::danger('your Message', 'http://your-link.com') ```
 
 Alternatively, again, if you're using Laravel, you may reference the flashy() helper function, instead of the facade. Here's an example:
@@ -86,6 +93,4 @@ If you need to modify the flash message partials, you can run:
 ``` php artisan vendor:publish ```
 
 >This package has jQuery has dependency. 
-
-
 

@@ -44,5 +44,8 @@ class UflashServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../views' => base_path('resources/views/vendor/uflash')
         ]);
+        $this->publishes([
+            __DIR__ . '/../icons' => base_path('public/vendor/uflash')
+        ],'public');
     }
 }
